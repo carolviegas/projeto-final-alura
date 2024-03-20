@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #000; /* Fundo preto */
+  color: white; /* Texto branco para contraste */
+}
+
+.main {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  padding: 15px;
+  width: 30vw;
+  margin: auto;
+  text-align: center;
+}
+
+.box {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.2);
+  background-color: #202020; /* Caixas com fundo escuro */
+  border-radius: 0.5em;
+  width: 30vw;
+  height: auto;
+  color: white;
+}
+
+.btn {
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #7c7579;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #5C7EBC; /* Azul aço claro */
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  height: 50px;
+}
+
+.footer {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #202020; /* Cor de fundo para o rodapé */
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  position: fixed; /* Fixa o rodapé na parte inferior da página */
+  bottom: 0; /* Alinha o rodapé na parte inferior */
+  left: 0; /* Alinha o rodapé à esquerda */
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links h2 {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.logo-alura {
+  position: absolute; /* Ou 'fixed' se você quer que fique no lugar ao rolar a página */
+  top: 10px; /* Distância do topo da página */
+  left: 10px; /* Distância do lado esquerdo da página */
+  width: 100px; /* Ajuste para o tamanho desejado da logo */
+  z-index: 1000; /* Garante que a logo fique acima dos outros elementos se necessário */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Ou 'center' se você quiser centralizar verticalmente */
+}
+
+.text-section {
+  flex-grow: 1; /* Faz com que esta seção preencha o espaço disponível */
+}
+
+.cadeado-crip {
+  max-width: 100%; /* A imagem ocupa toda a largura da .cadeado-section */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove o espaço extra abaixo da imagem */
+  width: 300px; /* ajuste conforme necessário */
+  height: auto;
+}
+
+/* ... Restante do CSS ... */
+.form.box {
+  /* outros estilos... */
+  margin-bottom: 50px; /* Adiciona espaço abaixo da área do formulário */
+}
+
+.msg.box {
+  /* outros estilos... */
+  /* assegure-se de que não há margem negativa ou outro estilo anulando o espaço */
+}
+
+/* Estilização adicional para posicionar a imagem do cadeado à direita */
+.cadeado-section {
+  position: absolute; /* ou 'fixed', dependendo de como você quer que ela se comporte ao rolar a tela */
+  right: 150px; /* 10px à direita da janela do navegador */
+  top: 125px; /* ajuste conforme necessário */
+}
+
+/* CSS para a imagem do cadeado */
+.cadeado-cript {
+  width: 300px; /* ajuste conforme necessário */
+  height: auto; /* mantém a proporção da imagem */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cadeado-cript {
+  animation: pulse 2s infinite ease-in-out;
+}
