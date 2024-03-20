@@ -69,9 +69,9 @@ body {
   background-color: #202020; /* Cor de fundo para o rodapé */
   color: white;
   font-family: 'Montserrat', sans-serif;
-  position: fixed; /* Fixa o rodapé na parte inferior da página */
-  bottom: 0; /* Alinha o rodapé na parte inferior */
-  left: 0; /* Alinha o rodapé à esquerda */
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
 }
 
 .footer {
@@ -104,53 +104,43 @@ body {
 }
 
 .logo-alura {
-  position: absolute; /* Ou 'fixed' se você quer que fique no lugar ao rolar a página */
-  top: 10px; /* Distância do topo da página */
-  left: 10px; /* Distância do lado esquerdo da página */
-  width: 100px; /* Ajuste para o tamanho desejado da logo */
-  z-index: 1000; /* Garante que a logo fique acima dos outros elementos se necessário */
+  position: absolute; 
+  top: 10px;
+  left: 10px; 
+  width: 100px; 
+  z-index: 1000; 
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Ou 'center' se você quiser centralizar verticalmente */
+  align-items: flex-start;
 }
 
 .text-section {
-  flex-grow: 1; /* Faz com que esta seção preencha o espaço disponível */
+  flex-grow: 1; 
 }
 
 .cadeado-crip {
-  max-width: 100%; /* A imagem ocupa toda a largura da .cadeado-section */
-  height: auto; /* Mantém a proporção da imagem */
-  display: block; /* Remove o espaço extra abaixo da imagem */
-  width: 300px; /* ajuste conforme necessário */
+  max-width: 100%; 
+  display: block;
+  width: 300px;
   height: auto;
 }
 
-/* ... Restante do CSS ... */
+
 .form.box {
-  /* outros estilos... */
-  margin-bottom: 50px; /* Adiciona espaço abaixo da área do formulário */
+  margin-bottom: 50px; 
 }
 
-.msg.box {
-  /* outros estilos... */
-  /* assegure-se de que não há margem negativa ou outro estilo anulando o espaço */
+  position: absolute; 
+  right: 150px; 
+  top: 125px;
 }
 
-/* Estilização adicional para posicionar a imagem do cadeado à direita */
-.cadeado-section {
-  position: absolute; /* ou 'fixed', dependendo de como você quer que ela se comporte ao rolar a tela */
-  right: 150px; /* 10px à direita da janela do navegador */
-  top: 125px; /* ajuste conforme necessário */
-}
-
-/* CSS para a imagem do cadeado */
 .cadeado-cript {
-  width: 300px; /* ajuste conforme necessário */
-  height: auto; /* mantém a proporção da imagem */
+  width: 300px; 
+  height: auto; 
 }
 
 @keyframes pulse {
