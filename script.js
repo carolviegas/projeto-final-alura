@@ -1,5 +1,7 @@
 document.getElementById('btn-cripto').addEventListener('click', criptografar);
 document.getElementById('btn-descripto').addEventListener('click', descriptografar);
+// document.getElementById('btn-copy').addEventListener('click', copiarTexto); // Implemente esta função se necessário
+
 
 function criptografar() {
     let texto = document.getElementById("input-texto").value;
