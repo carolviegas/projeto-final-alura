@@ -1,6 +1,5 @@
 document.getElementById('btn-cripto').addEventListener('click', criptografar);
 document.getElementById('btn-descripto').addEventListener('click', descriptografar);
-// document.getElementById('btn-copy').addEventListener('click', copiarTexto); // Implemente esta função se necessário
 
 function criptografar() {
     let texto = document.getElementById("input-texto").value;
@@ -24,5 +23,17 @@ function descriptografar() {
 
 document.getElementById("msg").classList.add("mostrar");
 
-
-// Função copiarTexto() ainda precisa ser implementada se você quiser essa funcionalidade
+document.getElementById('btn-copy').addEventListener('click', function() {
+    var textoParaCopiar = document.getElementById('msg');
+    if (textoParaCopiar.value === '') {
+      alert('Não há texto para copiar!');
+    } else {
+      navigator.clipboard.writeText(textoParaCopiar.value).then(function() {
+        alert('Texto copiado com sucesso!');
+      }).catch(function(err) {
+        console.error('Erro ao copiar texto: ', err);
+        alert('Erro ao copiar texto.');
+      });
+    }
+  });
+  
